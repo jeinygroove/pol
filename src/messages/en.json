@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "Home",
+    "schedule": "Schedule",
+    "gallery": "Gallery",
+    "studios": "Studios",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Discover Your Strength",
+    "subtitle": "Pole Dance & Aerial Arts in Munich",
+    "cta_book": "Book a Class",
+    "cta_schedule": "View Schedule"
+  },
+  "about": {
+    "title": "About Us",
+    "text": "Welcome to Polerinna – your home for Pole Dance and Aerial Arts. We offer classes for all levels, from beginners to advanced dancers. Our experienced instructors will guide you on your journey to greater strength, flexibility, and confidence.",
+    "values_strength": "Strength",
+    "values_flexibility": "Flexibility",
+    "values_community": "Community",
+    "values_strength_desc": "Build muscle and discover your physical power",
+    "values_flexibility_desc": "Improve your mobility and body control",
+    "values_community_desc": "Become part of a supportive and inspiring community"
+  },
+  "studios": {
+    "title": "Our Studios",
+    "polerinna": {
+      "name": "Polerinna",
+      "address": "Lindwurmstraße 101",
+      "city": "80337 München",
+      "description": "Our main studio with a welcoming atmosphere for beginners and advanced dancers."
+    },
+    "gold": {
+      "name": "Polerinna GOLD",
+      "address": "Hofmannstraße 7A",
+      "city": "81379 München",
+      "description": "Our premium studio with exclusive equipment for demanding classes."
+    },
+    "directions": "Get Directions"
+  },
+  "classes": {
+    "title": "Our Classes",
+    "subtitle": "Something for Every Level",
+    "beginner": "Beginner",
+    "beginner_desc": "Perfect for those trying Pole Dance for the first time. Learn the basics safely and with fun.",
+    "intermediate": "Intermediate",
+    "intermediate_desc": "For dancers with basic knowledge – expand your repertoire and refine your technique.",
+    "advanced": "Advanced",
+    "advanced_desc": "Demanding choreographies and complex figures for experienced pole dancers.",
+    "aerial": "Aerial Hoop",
+    "aerial_desc": "Acrobatics and elegance on the aerial hoop – a beautiful alternative to Pole Dance.",
+    "flexibility": "Flexibility",
+    "flexibility_desc": "Stretching and mobility training to improve your range of motion.",
+    "kids": "Kids & Teens",
+    "kids_desc": "Age-appropriate classes for children and teenagers under professional guidance."
+  },
+  "schedule": {
+    "title": "Schedule & Booking",
+    "subtitle": "Book your class directly through our booking system",
+    "cta": "Book Online",
+    "eversports_note": "Powered by Eversports"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "A glimpse into our studio and community"
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "follow": "Follow Us"
+  },
+  "footer": {
+    "impressum": "Legal Notice",
+    "datenschutz": "Privacy Policy",
+    "agb": "Terms & Conditions",
+    "rights": "All rights reserved"
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "angaben": "Information according to § 5 TMG",
+    "owner": "ADD OWNER NAME HERE",
+    "address": "ADD ADDRESS HERE",
+    "contact_title": "Contact",
+    "email": "Email: Polerinna@t-online.de",
+    "phone": "Phone: +49 157 30677320",
+    "responsible": "Responsible for content according to § 55 Abs. 2 RStV",
+    "disclaimer": "Disclaimer",
+    "disclaimer_text": "The content of our pages has been created with the utmost care. However, we cannot guarantee the accuracy, completeness and timeliness of the content."
+  },
+  "datenschutz": {
+    "title": "Privacy Policy",
+    "intro": "We take the protection of your personal data very seriously and treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.",
+    "responsible_title": "Responsible Party",
+    "responsible_text": "The responsible party for data processing on this website is: OWNER NAME, ADDRESS",
+    "cookies_title": "Cookies",
+    "cookies_text": "This website does not use cookies.",
+    "hosting_title": "Hosting",
+    "hosting_text": "This website is hosted by an external service provider (hoster). Personal data collected on this website is stored on the hoster's servers.",
+    "rights_title": "Your Rights",
+    "rights_text": "You have the right to receive information free of charge about the origin, recipient and purpose of your stored personal data. You also have the right to request the correction or deletion of this data."
+  },
+  "agb": {
+    "title": "Terms & Conditions",
+    "section1_title": "§ 1 Scope",
+    "section1_text": "These General Terms and Conditions apply to all contracts between Polerinna (hereinafter 'Studio') and the customer regarding participation in courses and use of the studio facilities.",
+    "section2_title": "§ 2 Registration and Booking",
+    "section2_text": "Registration for courses is done exclusively online via the Eversports booking system. A booking becomes effective once the customer has received a confirmation email.",
+    "section3_title": "§ 3 Payment",
+    "section3_text": "Payment is made according to the conditions specified in the booking system. All prices are final prices including the applicable VAT.",
+    "section4_title": "§ 4 Cancellation",
+    "section4_text": "Free cancellation is possible up to 12 hours before the start of the class. For later cancellations or no-shows, the full class price will be charged. In case of illness, please cancel early and provide a medical certificate.",
+    "section5_title": "§ 5 Health and Safety",
+    "section5_text": "Participation in classes is at your own risk. Customers are obligated to inform the instructor of any health restrictions. Participation is not permitted if you have health complaints.",
+    "section6_title": "§ 6 Liability",
+    "section6_text": "The studio is not liable for injuries caused by improper application of the techniques learned, nor for theft or damage to items in the studio.",
+    "section7_title": "§ 7 House Rules",
+    "section7_text": "Customers are obligated to observe the house rules of the studio. The studio reserves the right to expel persons who violate the house rules.",
+    "section8_title": "§ 8 Data Protection",
+    "section8_text": "The collection and processing of personal data is carried out in accordance with our privacy policy and the legal provisions of the GDPR.",
+    "section9_title": "§ 9 Changes to Terms",
+    "section9_text": "The studio reserves the right to change these terms at any time. Changes will be communicated to customers by email.",
+    "section10_title": "§ 10 Final Provisions",
+    "section10_text": "The law of the Federal Republic of Germany applies. Place of performance and jurisdiction is Munich."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "Start",
+    "schedule": "Stundenplan",
+    "gallery": "Galerie",
+    "studios": "Studios",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "tagline": "Entdecke deine Kraft",
+    "subtitle": "Pole Dance & Aerial Arts in München",
+    "cta_book": "Kurs buchen",
+    "cta_schedule": "Stundenplan"
+  },
+  "about": {
+    "title": "Über uns",
+    "text": "Willkommen bei Polerinna – deinem Zuhause für Pole Dance und Aerial Arts. Wir bieten Kurse für alle Levels, von Anfängern bis zu fortgeschrittenen Tänzerinnen und Tänzern. Unsere erfahrenen Trainerinnen begleiten dich auf deinem Weg zu mehr Kraft, Flexibilität und Selbstbewusstsein.",
+    "values_strength": "Kraft",
+    "values_flexibility": "Flexibilität",
+    "values_community": "Community",
+    "values_strength_desc": "Baue Muskeln auf und entdecke deine körperliche Stärke",
+    "values_flexibility_desc": "Verbessere deine Beweglichkeit und Körperkontrolle",
+    "values_community_desc": "Werde Teil einer unterstützenden und inspirierenden Community"
+  },
+  "studios": {
+    "title": "Unsere Studios",
+    "polerinna": {
+      "name": "Polerinna",
+      "address": "Lindwurmstraße 101",
+      "city": "80337 München",
+      "description": "Unser Hauptstudio mit einer einladenden Atmosphäre für Anfänger und Fortgeschrittene."
+    },
+    "gold": {
+      "name": "Polerinna GOLD",
+      "address": "Hofmannstraße 7A",
+      "city": "81379 München",
+      "description": "Unser Premium-Studio mit exklusiver Ausstattung für anspruchsvolle Kurse."
+    },
+    "directions": "Route planen"
+  },
+  "classes": {
+    "title": "Unsere Kurse",
+    "subtitle": "Für jedes Level das Richtige",
+    "beginner": "Anfänger",
+    "beginner_desc": "Perfekt für alle, die Pole Dance zum ersten Mal ausprobieren. Lerne die Grundlagen sicher und mit Spaß.",
+    "intermediate": "Fortgeschritten",
+    "intermediate_desc": "Für Tanzende mit Grundkenntnissen – erweitere dein Repertoire und verfeinere deine Technik.",
+    "advanced": "Profi",
+    "advanced_desc": "Anspruchsvolle Choreographien und komplexe Figuren für erfahrene Pole Dancer.",
+    "aerial": "Aerial Hoop",
+    "aerial_desc": "Artistik und Eleganz am Luftring – eine wunderschöne Alternative zum Pole Dance.",
+    "flexibility": "Flexibilität",
+    "flexibility_desc": "Stretching und Mobility-Training zur Verbesserung deiner Beweglichkeit.",
+    "kids": "Kids & Teens",
+    "kids_desc": "Altersgerechte Kurse für Kinder und Jugendliche unter professioneller Anleitung."
+  },
+  "schedule": {
+    "title": "Stundenplan & Buchung",
+    "subtitle": "Buche deinen Kurs direkt über unser Buchungssystem",
+    "cta": "Zur Online-Buchung",
+    "eversports_note": "Powered by Eversports"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Einblicke in unser Studio und unsere Community"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "follow": "Folge uns"
+  },
+  "footer": {
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "agb": "AGB",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "angaben": "Angaben gemäß § 5 TMG",
+    "owner": "INHABER NAME EINTRAGEN",
+    "address": "ADRESSE EINTRAGEN",
+    "contact_title": "Kontakt",
+    "email": "E-Mail: Polerinna@t-online.de",
+    "phone": "Telefon: +49 157 30677320",
+    "responsible": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+    "disclaimer": "Haftungsausschluss",
+    "disclaimer_text": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
+  },
+  "datenschutz": {
+    "title": "Datenschutzerklärung",
+    "intro": "Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+    "responsible_title": "Verantwortliche Stelle",
+    "responsible_text": "Verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: INHABER NAME, ADRESSE",
+    "cookies_title": "Cookies",
+    "cookies_text": "Diese Website verwendet keine Cookies.",
+    "hosting_title": "Hosting",
+    "hosting_text": "Diese Website wird bei einem externen Dienstleister (Hoster) gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.",
+    "rights_title": "Ihre Rechte",
+    "rights_text": "Sie haben das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen."
+  },
+  "agb": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "section1_title": "§ 1 Geltungsbereich",
+    "section1_text": "Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge zwischen Polerinna (nachfolgend 'Studio') und dem Kunden über die Teilnahme an Kursen und die Nutzung der Studioanlagen.",
+    "section2_title": "§ 2 Anmeldung und Buchung",
+    "section2_text": "Die Anmeldung zu Kursen erfolgt ausschließlich online über das Buchungssystem Eversports. Eine Buchung wird wirksam, sobald der Kunde eine Bestätigungs-E-Mail erhalten hat.",
+    "section3_title": "§ 3 Zahlung",
+    "section3_text": "Die Zahlung erfolgt gemäß den im Buchungssystem angegebenen Konditionen. Alle Preise sind Endpreise inklusive der gesetzlichen Mehrwertsteuer.",
+    "section4_title": "§ 4 Stornierung und Rücktritt",
+    "section4_text": "Eine kostenlose Stornierung ist bis zu 12 Stunden vor Kursbeginn möglich. Bei späterer Absage oder Nichterscheinen wird der volle Kurspreis berechnet. Im Krankheitsfall bitten wir um frühzeitige Absage und Vorlage eines ärztlichen Attests.",
+    "section5_title": "§ 5 Gesundheit und Sicherheit",
+    "section5_text": "Die Teilnahme an den Kursen erfolgt auf eigene Gefahr. Kunden sind verpflichtet, den Trainer über gesundheitliche Einschränkungen zu informieren. Bei gesundheitlichen Beschwerden ist die Teilnahme nicht gestattet.",
+    "section6_title": "§ 6 Haftung",
+    "section6_text": "Das Studio haftet nicht für Verletzungen, die durch unsachgemäße Anwendung der erlernten Techniken entstehen, sowie nicht für Diebstahl oder Beschädigung von Gegenständen im Studio.",
+    "section7_title": "§ 7 Hausordnung",
+    "section7_text": "Kunden sind verpflichtet, die Hausordnung des Studios zu beachten. Das Studio behält sich das Recht vor, Personen, die gegen die Hausordnung verstoßen, des Studios zu verweisen.",
+    "section8_title": "§ 8 Datenschutz",
+    "section8_text": "Die Erhebung und Verarbeitung personenbezogener Daten erfolgt gemäß unserer Datenschutzerklärung und den gesetzlichen Bestimmungen der DSGVO.",
+    "section9_title": "§ 9 Änderungen der AGB",
+    "section9_text": "Das Studio behält sich das Recht vor, diese AGB jederzeit zu ändern. Änderungen werden den Kunden per E-Mail mitgeteilt.",
+    "section10_title": "§ 10 Schlussbestimmungen",
+    "section10_text": "Es gilt das Recht der Bundesrepublik Deutschland. Erfüllungsort und Gerichtsstand ist München."
+  }
+}
