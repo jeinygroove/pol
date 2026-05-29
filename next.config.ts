@@ -9,4 +9,7 @@ const nextConfig: NextConfig = {
   },
 };
 
+
+import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
+
 export default withNextIntl(nextConfig);
