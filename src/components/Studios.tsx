@@ -22,12 +22,12 @@ const STUDIOS = [
     theme: {
       bg: 'bg-neutral-900',
       accentText: 'text-neutral-400',
-      btn: 'bg-white text-neutral-900 hover:bg-neutral-100',
-      instagram: 'text-neutral-400 hover:text-white',
+      btn: 'bg-white text-neutral-900 hover:bg-gold-300',
+      instagram: 'text-neutral-400 hover:text-gold-300',
       number: 'text-neutral-700',
       text: 'text-white',
       subtext: 'text-neutral-400',
-      border: 'border-neutral-600 text-neutral-400 hover:border-white hover:text-white',
+      border: 'border-neutral-500 text-neutral-300 hover:border-gold-300 hover:text-gold-300',
     },
   },
   {
@@ -47,9 +47,9 @@ const STUDIOS = [
     mapsUrl: 'https://maps.google.com/?q=Hofmannstraße+7A,+81379+München',
     theme: {
       bg: 'bg-white',
-      accentText: 'text-amber-600',
-      btn: 'bg-amber-600 text-white hover:bg-amber-700',
-      instagram: 'text-amber-600 hover:text-amber-800',
+      accentText: 'text-gold-600',
+      btn: 'bg-neutral-900 text-white hover:bg-gold-600',
+      instagram: 'text-gold-600 hover:text-gold-800',
       number: 'text-neutral-200',
       text: 'text-neutral-900',
       subtext: 'text-neutral-500',
@@ -73,7 +73,7 @@ export default function Studios() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-rose-700 text-sm tracking-[0.3em] uppercase mb-4">München</p>
+          <p className="text-gold-500 text-sm tracking-[0.3em] uppercase mb-4">München</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
             {t('title')}
           </h2>

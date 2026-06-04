@@ -18,12 +18,12 @@ export default async function DatenschutzPage() {
 
         {sections.map((s) => (
           <section key={s.title} className="mb-10">
-            <h2 className="text-sm tracking-widest uppercase text-rose-700 mb-4">{s.title}</h2>
+            <h2 className="text-sm tracking-widest uppercase text-gold-500 mb-4">{s.title}</h2>
             <p className="text-neutral-600 leading-relaxed">{s.text}</p>
           </section>
         ))}
 
-        <section className="mb-10 p-6 bg-neutral-50 border-l-4 border-rose-200">
+        <section className="mb-10 p-6 bg-neutral-50 border-l-4 border-gold-200">
           <p className="text-sm text-neutral-500">
             Diese Datenschutzerklärung wurde erstellt und entspricht den Anforderungen der DSGVO (Datenschutz-Grundverordnung) und des BDSG (Bundesdatenschutzgesetz). Bei Fragen wenden Sie sich bitte an uns.
           </p>

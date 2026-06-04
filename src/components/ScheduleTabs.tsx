@@ -39,7 +39,7 @@ export default function ScheduleTabs() {
             onClick={() => setActiveTab(t.key)}
             className={`px-6 py-4 text-sm tracking-widest uppercase transition-all border-b-2 -mb-px ${
               activeTab === t.key
-                ? 'border-rose-700 text-rose-700 font-semibold'
+                ? 'border-gold-500 text-gold-500 font-semibold'
                 : 'border-transparent text-neutral-500 hover:text-neutral-800'
             }`}
           >
@@ -73,8 +73,8 @@ export default function ScheduleTabs() {
             onClick={() => setActiveStudio('gold')}
             className={`flex items-center px-5 py-2.5 border-2 transition-all ${
               activeStudio === 'gold'
-                ? 'border-amber-500 bg-white'
-                : 'border-neutral-200 bg-white hover:border-amber-300'
+                ? 'border-gold-500 bg-white'
+                : 'border-neutral-200 bg-white hover:border-gold-300'
             }`}
           >
             <Image

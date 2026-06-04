@@ -8,7 +8,7 @@ export default async function GalleryPage() {
     <div className="pt-20 min-h-screen bg-white">
       {/* Header */}
       <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-        <p className="text-rose-700 text-sm tracking-[0.3em] uppercase mb-4">
+        <p className="text-gold-500 text-sm tracking-[0.3em] uppercase mb-4">
           Polerinna Studio
         </p>
         <h1 className="font-serif text-4xl md:text-5xl font-bold text-neutral-900 mb-4">

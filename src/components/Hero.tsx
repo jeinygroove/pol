@@ -23,7 +23,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-4xl">
-        <p className="text-rose-300 text-sm tracking-[0.4em] uppercase mb-4">
+        <p className="text-gold-300 text-sm tracking-[0.4em] uppercase mb-4">
           Polerinna Studio
         </p>
         <h1 className="font-serif text-5xl md:text-7xl font-bold leading-tight mb-6">
@@ -35,7 +35,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href={`/${locale}/schedule`}
-            className="bg-rose-700 text-white px-8 py-4 text-sm tracking-widest uppercase hover:bg-rose-800 transition-colors"
+            className="bg-gold-500 text-white px-8 py-4 text-sm tracking-widest uppercase hover:bg-gold-600 transition-colors"
           >
             {t('cta_book')}
           </Link>

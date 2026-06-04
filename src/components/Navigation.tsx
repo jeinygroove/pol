@@ -60,8 +60,10 @@ export default function Navigation() {
                 href={fullHref}
                 className={`text-sm tracking-widest uppercase transition-colors ${
                   isActive
-                    ? 'text-rose-700 font-semibold'
-                    : 'text-neutral-700 hover:text-rose-600'
+                    ? scrolled ? 'text-gold-500 font-semibold' : 'text-gold-300 font-semibold'
+                    : scrolled
+                    ? 'text-neutral-700 hover:text-gold-500'
+                    : 'text-white/90 hover:text-gold-300'
                 }`}
               >
                 {link.label}
@@ -75,13 +77,15 @@ export default function Navigation() {
           <div className="flex items-center gap-1 text-xs tracking-wider">
             {routing.locales.map((l, i) => (
               <span key={l} className="flex items-center">
-                {i > 0 && <span className="text-neutral-300 mx-1">|</span>}
+                {i > 0 && <span className={`mx-1 ${scrolled ? 'text-neutral-300' : 'text-white/30'}`}>|</span>}
                 <Link
                   href={`/${l}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`}
                   className={`transition-colors ${
                     l === locale
-                      ? 'text-rose-700 font-semibold'
-                      : 'text-neutral-500 hover:text-rose-600'
+                      ? scrolled ? 'text-gold-500 font-semibold' : 'text-white font-semibold underline underline-offset-4 decoration-gold-400'
+                      : scrolled
+                      ? 'text-neutral-500 hover:text-gold-500'
+                      : 'text-white/70 hover:text-white'
                   }`}
                 >
                   {localeLabels[l]}
@@ -91,7 +95,11 @@ export default function Navigation() {
           </div>
           <Link
             href={`/${locale}/schedule`}
-            className="bg-rose-700 text-white text-xs tracking-widest uppercase px-5 py-2.5 hover:bg-rose-800 transition-colors"
+            className={`text-xs tracking-widest uppercase px-5 py-2.5 border transition-colors ${
+              scrolled
+                ? 'border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white'
+                : 'border-white text-white hover:border-gold-400 hover:text-gold-300'
+            }`}
           >
             {t('home') === 'Главная' ? 'Записаться' : t('home') === 'Home' ? 'Book Now' : 'Buchen'}
           </Link>
@@ -104,9 +112,9 @@ export default function Navigation() {
           aria-label="Menu"
         >
           <div className="w-6 flex flex-col gap-1.5">
-            <span className={`block h-0.5 bg-neutral-800 transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-            <span className={`block h-0.5 bg-neutral-800 transition-all ${menuOpen ? 'opacity-0' : ''}`} />
-            <span className={`block h-0.5 bg-neutral-800 transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+            <span className={`block h-0.5 transition-all ${scrolled ? 'bg-neutral-800' : 'bg-white'} ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`block h-0.5 transition-all ${scrolled ? 'bg-neutral-800' : 'bg-white'} ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block h-0.5 transition-all ${scrolled ? 'bg-neutral-800' : 'bg-white'} ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </div>
         </button>
       </div>
@@ -121,7 +129,7 @@ export default function Navigation() {
                 key={link.href}
                 href={fullHref}
                 onClick={() => setMenuOpen(false)}
-                className="text-sm tracking-widest uppercase text-neutral-700 hover:text-rose-600"
+                className="text-sm tracking-widest uppercase text-neutral-700 hover:text-gold-500"
               >
                 {link.label}
               </Link>
@@ -134,7 +142,7 @@ export default function Navigation() {
                 href={`/${l}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`}
                 onClick={() => setMenuOpen(false)}
                 className={`text-xs tracking-wider ${
-                  l === locale ? 'text-rose-700 font-semibold' : 'text-neutral-500'
+                  l === locale ? 'text-gold-500 font-semibold underline underline-offset-4' : 'text-neutral-500 hover:text-neutral-900'
                 }`}
               >
                 {localeLabels[l]}

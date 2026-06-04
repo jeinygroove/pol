@@ -42,12 +42,12 @@ export default function About() {
                 FOTO HIER
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-rose-700 -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold-500 -z-10" />
           </div>
 
           {/* Text */}
           <div>
-            <p className="text-rose-700 text-sm tracking-[0.3em] uppercase mb-4">
+            <p className="text-gold-500 text-sm tracking-[0.3em] uppercase mb-4">
               Polerinna Studio
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-bold leading-tight mb-8 text-neutral-900">

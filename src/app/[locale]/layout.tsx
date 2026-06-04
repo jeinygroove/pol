@@ -2,19 +2,15 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/routing';
-import { Playfair_Display, Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import '../globals.css';
 
-const playfair = Playfair_Display({
+const montserrat = Montserrat({
   subsets: ['latin', 'cyrillic'],
-  variable: '--font-playfair',
-});
-
-const inter = Inter({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-inter',
+  variable: '--font-montserrat',
+  weight: ['300', '400', '500', '600', '700', '800'],
 });
 
 export default async function LocaleLayout({
@@ -33,7 +29,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${playfair.variable} ${inter.variable}`}>
+    <html lang={locale} className={montserrat.variable}>
       <body className="font-sans bg-white text-neutral-900 antialiased">
         <NextIntlClientProvider messages={messages}>
           <Navigation />
