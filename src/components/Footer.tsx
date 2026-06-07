@@ -2,7 +2,6 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
-import Image from 'next/image';
 
 /*
   SOZIALE NETZWERKE — trage hier deine echten Links ein:
@@ -34,15 +33,6 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="mb-4">
-              <Image
-                src="/images/logo-polerinna.png"
-                alt="Polerinna Poledance Studio"
-                width={180}
-                height={72}
-                className="h-14 w-auto object-contain brightness-0 invert"
-              />
-            </div>
             <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
               Pole Dance Studio in München. Zwei Standorte – ein Zuhause für deine Leidenschaft.
             </p>
@@ -53,24 +43,14 @@ export default function Footer() {
             <h3 className="text-xs tracking-widest uppercase text-neutral-400 mb-4">Studios</h3>
             <div className="flex flex-col gap-6">
               <div>
-                <Image
-                  src="/images/logo-polerinna.png"
-                  alt="Polerinna"
-                  width={120}
-                  height={40}
-                  className="h-8 w-auto object-contain brightness-0 invert mb-1"
-                />
-                <p className="text-neutral-400 text-xs">Lindwurmstraße 101, 80337 München</p>
+                <p className="text-white text-sm font-semibold tracking-widest uppercase mb-1">Polerinna</p>
+                <a href="https://maps.app.goo.gl/dKnSJjXQ8Y7dNXoy8" target="_blank" rel="noopener noreferrer" className="text-neutral-400 text-xs hover:text-white transition-colors">Lindwurmstraße 101, 80337 München</a>
               </div>
               <div>
-                <Image
-                  src="/images/logo-polerinna-gold.png"
-                  alt="Polerinna GOLD"
-                  width={120}
-                  height={40}
-                  className="h-8 w-auto object-contain mb-1"
-                />
-                <p className="text-neutral-400 text-xs">Hofmannstraße 7A, 81379 München</p>
+                <p className="text-white text-sm font-semibold tracking-widest uppercase mb-1">
+                  Polerinna <span className="text-gold-400">Gold</span>
+                </p>
+                <a href="https://maps.app.goo.gl/zFoJGV21jj3m1LxW6" target="_blank" rel="noopener noreferrer" className="text-neutral-400 text-xs hover:text-white transition-colors">Hofmannstraße 7A, 81379 München</a>
               </div>
             </div>
           </div>

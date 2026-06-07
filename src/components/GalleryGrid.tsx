@@ -8,15 +8,16 @@ import { useState } from 'react';
   Format: { src: '/images/gallery/foto1.jpg', alt: 'Beschreibung' }
 */
 const images = [
-  { src: '/images/gallery/photo-1.jpg', alt: 'Pole Dance' },
-  { src: '/images/gallery/photo-2.jpg', alt: 'Aerial Hoop' },
-  { src: '/images/gallery/photo-3.jpg', alt: 'Studio Polerinna' },
-  { src: '/images/gallery/photo-4.jpg', alt: 'Kurs' },
-  { src: '/images/gallery/photo-5.jpg', alt: 'Performance' },
-  { src: '/images/gallery/photo-6.jpg', alt: 'Training' },
-  { src: '/images/gallery/photo-7.jpg', alt: 'Polerinna GOLD' },
-  { src: '/images/gallery/photo-8.jpg', alt: 'Community' },
-  { src: '/images/gallery/photo-9.jpg', alt: 'Flexibilität' },
+  { src: '/images/gallery/pd_1.jpg', alt: 'Pole Dance Polerinna' },
+  { src: '/images/gallery/pd_gold_1.JPG', alt: 'Polerinna GOLD' },
+  { src: '/images/gallery/pd_2.png', alt: 'Pole Dance Polerinna' },
+  { src: '/images/gallery/pd_gold_2.JPG', alt: 'Polerinna GOLD' },
+  { src: '/images/gallery/pd_3.jpg', alt: 'Pole Dance Polerinna' },
+  { src: '/images/gallery/pd_gold_3.JPG', alt: 'Polerinna GOLD' },
+  { src: '/images/gallery/pd_4.jpg', alt: 'Pole Dance Polerinna' },
+  { src: '/images/gallery/pd_gold_4.JPG', alt: 'Polerinna GOLD' },
+  { src: '/images/gallery/pd_5.jpg', alt: 'Pole Dance Polerinna' },
+  { src: '/images/gallery/pd_gold_5.JPG', alt: 'Polerinna GOLD' },
 ];
 
 export default function GalleryGrid() {
@@ -45,10 +46,6 @@ export default function GalleryGrid() {
             </div>
           ))}
         </div>
-
-        <p className="text-center text-neutral-400 text-sm mt-8">
-          Fotos in <code className="bg-neutral-100 px-1">/public/images/gallery/</code> ablegen
-        </p>
       </div>
 
       {/* Lightbox */}

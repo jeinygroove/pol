@@ -14,7 +14,6 @@ export default async function GalleryPage() {
         <h1 className="font-serif text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
           {t('title')}
         </h1>
-        <p className="text-neutral-500 text-lg">{t('subtitle')}</p>
       </div>
 
       <GalleryGrid />

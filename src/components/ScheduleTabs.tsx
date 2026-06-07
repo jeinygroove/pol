@@ -1,7 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 type TabKey = 'schedule' | 'prices' | 'vouchers';
 
@@ -22,6 +21,21 @@ export default function ScheduleTabs() {
   const [activeTab, setActiveTab] = useState<TabKey>('schedule');
   const [activeStudio, setActiveStudio] = useState<'polerinna' | 'gold'>('polerinna');
 
+  useEffect(() => {
+    document.querySelectorAll('script[data-eversports-loaded]').forEach(s => s.remove());
+    const timer = setTimeout(() => {
+      const s = document.createElement('script');
+      s.type = 'module';
+      s.src = `https://widget-static.eversports.io/loader.js?t=${Date.now()}`;
+      s.setAttribute('data-eversports-loaded', '1');
+      document.head.appendChild(s);
+    }, 50);
+    return () => {
+      clearTimeout(timer);
+      document.querySelectorAll('script[data-eversports-loaded]').forEach(s => s.remove());
+    };
+  }, []);
+
   const visibleWidgets: Record<string, boolean> = {
     schedule_polerinna: activeTab === 'schedule' && activeStudio === 'polerinna',
     schedule_gold:      activeTab === 'schedule' && activeStudio === 'gold',
@@ -32,7 +46,7 @@ export default function ScheduleTabs() {
   return (
     <div>
       {/* Main tabs */}
-      <div className="flex border-b border-neutral-200 mb-6">
+      <div className="flex border-b border-neutral-200 mb-6 overflow-x-auto scrollbar-none">
         {TABS.map((t) => (
           <button
             key={t.key}
@@ -53,43 +67,39 @@ export default function ScheduleTabs() {
         <div className="flex gap-3 mb-8">
           <button
             onClick={() => setActiveStudio('polerinna')}
-            className={`flex items-center px-5 py-2.5 border-2 transition-all ${
+            className={`flex flex-col items-start px-5 py-3 border-2 transition-all text-left ${
               activeStudio === 'polerinna'
                 ? 'border-neutral-900 bg-neutral-900'
                 : 'border-neutral-200 bg-white hover:border-neutral-400'
             }`}
           >
-            <Image
-              src="/images/logo-polerinna.png"
-              alt="Polerinna"
-              width={120}
-              height={40}
-              className={`h-7 w-auto object-contain ${
-                activeStudio === 'polerinna' ? 'brightness-0 invert' : 'brightness-0'
-              }`}
-            />
+            <span className={`text-sm font-semibold tracking-widest uppercase ${
+              activeStudio === 'polerinna' ? 'text-white' : 'text-neutral-900'
+            }`}>Polerinna</span>
+            <span className={`text-xs mt-0.5 ${
+              activeStudio === 'polerinna' ? 'text-neutral-400' : 'text-neutral-500'
+            }`}>Lindwurmstraße 101</span>
           </button>
           <button
             onClick={() => setActiveStudio('gold')}
-            className={`flex items-center px-5 py-2.5 border-2 transition-all ${
+            className={`flex flex-col items-start px-5 py-3 border-2 transition-all text-left ${
               activeStudio === 'gold'
-                ? 'border-gold-500 bg-white'
+                ? 'border-gold-500 bg-gold-50'
                 : 'border-neutral-200 bg-white hover:border-gold-300'
             }`}
           >
-            <Image
-              src="/images/logo-polerinna-gold.png"
-              alt="Polerinna GOLD"
-              width={120}
-              height={40}
-              className="h-7 w-auto object-contain"
-            />
+            <span className={`text-sm font-semibold tracking-widest uppercase ${
+              activeStudio === 'gold' ? 'text-gold-600' : 'text-neutral-900'
+            }`}>Polerinna <span className="text-gold-500">Gold</span></span>
+            <span className={`text-xs mt-0.5 ${
+              activeStudio === 'gold' ? 'text-gold-400' : 'text-neutral-500'
+            }`}>Hofmannstraße 7A</span>
           </button>
         </div>
       )}
 
       {/* All widgets in DOM, only active visible */}
-      <div className="bg-white min-h-[500px]">
+      <div className="bg-white min-h-[500px] overflow-x-hidden max-w-full">
         {Object.entries(WIDGETS).map(([key, id]) => (
           <div key={key} style={{ display: visibleWidgets[key] ? 'block' : 'none' }}>
             <div data-eversports-widget-id={id} />

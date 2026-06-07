@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { routing } from '@/routing';
 
 const localeLabels: Record<string, string> = { de: 'DE', en: 'EN', ru: 'RU' };
@@ -14,13 +14,6 @@ export default function Navigation() {
   const locale = useLocale();
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
 
@@ -31,11 +24,7 @@ export default function Navigation() {
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur shadow-sm' : 'bg-transparent'
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-sm">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center">
@@ -44,7 +33,7 @@ export default function Navigation() {
             alt="Polerinna Poledance Studio"
             width={160}
             height={64}
-            className={`h-12 w-auto object-contain transition-all ${scrolled ? 'brightness-0' : 'brightness-0 invert'}`}
+            className="h-16 w-auto object-contain brightness-0"
             priority
           />
         </Link>
@@ -60,10 +49,8 @@ export default function Navigation() {
                 href={fullHref}
                 className={`text-sm tracking-widest uppercase transition-colors ${
                   isActive
-                    ? scrolled ? 'text-gold-500 font-semibold' : 'text-gold-300 font-semibold'
-                    : scrolled
-                    ? 'text-neutral-700 hover:text-gold-500'
-                    : 'text-white/90 hover:text-gold-300'
+                    ? 'text-gold-500 font-semibold'
+                    : 'text-neutral-700 hover:text-gold-500'
                 }`}
               >
                 {link.label}
@@ -77,15 +64,13 @@ export default function Navigation() {
           <div className="flex items-center gap-1 text-xs tracking-wider">
             {routing.locales.map((l, i) => (
               <span key={l} className="flex items-center">
-                {i > 0 && <span className={`mx-1 ${scrolled ? 'text-neutral-300' : 'text-white/30'}`}>|</span>}
+                {i > 0 && <span className="mx-1 text-neutral-300">|</span>}
                 <Link
                   href={`/${l}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`}
                   className={`transition-colors ${
                     l === locale
-                      ? scrolled ? 'text-gold-500 font-semibold' : 'text-white font-semibold underline underline-offset-4 decoration-gold-400'
-                      : scrolled
-                      ? 'text-neutral-500 hover:text-gold-500'
-                      : 'text-white/70 hover:text-white'
+                      ? 'text-gold-500 font-semibold'
+                      : 'text-neutral-500 hover:text-gold-500'
                   }`}
                 >
                   {localeLabels[l]}
@@ -95,11 +80,7 @@ export default function Navigation() {
           </div>
           <Link
             href={`/${locale}/schedule`}
-            className={`text-xs tracking-widest uppercase px-5 py-2.5 border transition-colors ${
-              scrolled
-                ? 'border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white'
-                : 'border-white text-white hover:border-gold-400 hover:text-gold-300'
-            }`}
+            className="text-xs tracking-widest uppercase px-5 py-2.5 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white transition-colors"
           >
             {t('home') === 'Главная' ? 'Записаться' : t('home') === 'Home' ? 'Book Now' : 'Buchen'}
           </Link>
@@ -112,9 +93,9 @@ export default function Navigation() {
           aria-label="Menu"
         >
           <div className="w-6 flex flex-col gap-1.5">
-            <span className={`block h-0.5 transition-all ${scrolled ? 'bg-neutral-800' : 'bg-white'} ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-            <span className={`block h-0.5 transition-all ${scrolled ? 'bg-neutral-800' : 'bg-white'} ${menuOpen ? 'opacity-0' : ''}`} />
-            <span className={`block h-0.5 transition-all ${scrolled ? 'bg-neutral-800' : 'bg-white'} ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+            <span className={`block h-0.5 bg-neutral-800 transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`block h-0.5 bg-neutral-800 transition-all ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block h-0.5 bg-neutral-800 transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </div>
         </button>
       </div>

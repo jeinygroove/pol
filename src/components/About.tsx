@@ -31,16 +31,10 @@ export default function About() {
           <div className="relative">
             <div className="aspect-[3/4] bg-neutral-100 overflow-hidden">
               <img
-                src="/images/about.jpg"
+                src="/images/gallery/pd_2.png"
                 alt="Polerinna Studio"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none';
-                }}
               />
-              <div className="absolute inset-0 flex items-center justify-center text-neutral-300 text-sm tracking-wider">
-                FOTO HIER
-              </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold-500 -z-10" />
           </div>

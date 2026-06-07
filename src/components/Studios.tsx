@@ -8,6 +8,8 @@ const STUDIOS = [
     key: 'polerinna',
     logo: '/images/logo-polerinna.png',
     logoClass: 'brightness-0 invert',
+    logoSize: 'h-80',
+    logoMargin: '-mt-[7.5rem] -mb-10',
     photo: '/images/studio-1.jpg',
     address: 'Lindwurmstraße 101',
     zip: '80337 München',
@@ -18,7 +20,7 @@ const STUDIOS = [
     eversportsUrl: 'https://www.eversports.de/s/pole-dance-muenchen-polerinna',
     mapsEmbed:
       'https://maps.google.com/maps?q=Lindwurmstra%C3%9Fe+101,+80337+M%C3%BCnchen&output=embed&hl=de&z=15',
-    mapsUrl: 'https://maps.google.com/?q=Lindwurmstraße+101,+80337+München',
+    mapsUrl: 'https://maps.app.goo.gl/dKnSJjXQ8Y7dNXoy8',
     theme: {
       bg: 'bg-neutral-900',
       accentText: 'text-neutral-400',
@@ -34,6 +36,8 @@ const STUDIOS = [
     key: 'gold',
     logo: '/images/logo-polerinna-gold.png',
     logoClass: '',
+    logoSize: 'h-40',
+    logoMargin: '-mt-6',
     photo: '/images/studio-2.jpg',
     address: 'Hofmannstraße 7A',
     zip: '81379 München',
@@ -44,7 +48,7 @@ const STUDIOS = [
     eversportsUrl: 'https://www.eversports.de/s/polerinna-gold',
     mapsEmbed:
       'https://maps.google.com/maps?q=Hofmannstra%C3%9Fe+7A,+81379+M%C3%BCnchen&output=embed&hl=de&z=15',
-    mapsUrl: 'https://maps.google.com/?q=Hofmannstraße+7A,+81379+München',
+    mapsUrl: 'https://maps.app.goo.gl/zFoJGV21jj3m1LxW6',
     theme: {
       bg: 'bg-white',
       accentText: 'text-gold-600',
@@ -83,7 +87,7 @@ export default function Studios() {
         {/* Studio cards */}
         <div className="flex flex-col gap-6">
           {STUDIOS.map((studio, index) => (
-            <div key={studio.key} className={`overflow-hidden ${studio.theme.bg}`}>
+            <div key={studio.key} className={studio.theme.bg}>
               {/* Layout: info left, map right (alternates) */}
               <div className={`grid lg:grid-cols-2 ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
 
@@ -100,7 +104,7 @@ export default function Studios() {
                         alt={studio.key}
                         width={520}
                         height={200}
-                        className={`h-48 w-auto object-contain ${studio.logoClass}`}
+                        className={`${studio.logoSize} w-auto object-contain ${studio.logoMargin} ${studio.logoClass}`}
                       />
                     </div>
 
@@ -166,7 +170,7 @@ export default function Studios() {
                 </div>
 
                 {/* Map panel */}
-                <div className={`relative min-h-[360px] lg:min-h-[500px] ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                <div className={`relative min-h-[360px] lg:min-h-[500px] overflow-hidden ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                   <iframe
                     src={studio.mapsEmbed}
                     width="100%"

@@ -1,28 +1,11 @@
 import { getTranslations } from 'next-intl/server';
-import Script from 'next/script';
 import ScheduleTabs from '@/components/ScheduleTabs';
 
 export default async function SchedulePage() {
   const t = await getTranslations('schedule');
 
   return (
-    <div className="pt-20 min-h-screen bg-neutral-50">
-      {/* Eversports loader — type="module" injected via inline script */}
-      <Script
-        id="eversports-loader"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            if (!document.querySelector('[data-eversports-loaded]')) {
-              const s = document.createElement('script');
-              s.type = 'module';
-              s.src = 'https://widget-static.eversports.io/loader.js';
-              s.setAttribute('data-eversports-loaded', '1');
-              document.head.appendChild(s);
-            }
-          `,
-        }}
-      />
+    <div className="pt-20 min-h-screen bg-neutral-50 overflow-x-hidden">
 
       <div className="bg-white border-b border-neutral-100">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
