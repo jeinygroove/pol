@@ -1,3 +1,6 @@
+import type { Metadata } from 'next';
+export const metadata: Metadata = { title: 'Datenschutzerklärung', robots: { index: false } };
+
 const CONTENT = `
 <h1>Datenschutz&shy;erkl&auml;rung</h1>
 

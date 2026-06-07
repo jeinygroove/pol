@@ -1,5 +1,16 @@
 import { getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
 import GalleryGrid from '@/components/GalleryGrid';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const titles: Record<string, string> = {
+    de: 'Galerie – Einblicke ins Studio',
+    en: 'Gallery – Inside the Studio',
+    ru: 'Галерея – жизнь студии',
+  };
+  return { title: titles[locale] ?? titles.de };
+}
 
 export default async function GalleryPage() {
   const t = await getTranslations('gallery');

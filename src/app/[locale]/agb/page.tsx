@@ -1,3 +1,6 @@
+import type { Metadata } from 'next';
+export const metadata: Metadata = { title: 'AGB', robots: { index: false } };
+
 const SECTIONS = [
   {
     title: '1. Geltungsbereich',

@@ -1,3 +1,6 @@
+import type { Metadata } from 'next';
+export const metadata: Metadata = { title: 'Impressum', robots: { index: false } };
+
 export default function ImpressumPage() {
   return (
     <div className="pt-20 min-h-screen bg-white">

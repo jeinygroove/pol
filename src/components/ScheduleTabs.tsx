@@ -22,18 +22,15 @@ export default function ScheduleTabs() {
   const [activeStudio, setActiveStudio] = useState<'polerinna' | 'gold'>('polerinna');
 
   useEffect(() => {
-    document.querySelectorAll('script[data-eversports-loaded]').forEach(s => s.remove());
     const timer = setTimeout(() => {
+      document.querySelectorAll('script[data-eversports-loaded]').forEach(s => s.remove());
       const s = document.createElement('script');
       s.type = 'module';
       s.src = `https://widget-static.eversports.io/loader.js?t=${Date.now()}`;
       s.setAttribute('data-eversports-loaded', '1');
       document.head.appendChild(s);
-    }, 50);
-    return () => {
-      clearTimeout(timer);
-      document.querySelectorAll('script[data-eversports-loaded]').forEach(s => s.remove());
-    };
+    }, 100);
+    return () => clearTimeout(timer);
   }, []);
 
   const visibleWidgets: Record<string, boolean> = {
