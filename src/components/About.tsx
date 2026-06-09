@@ -44,7 +44,7 @@ export default function About() {
             <p className="text-gold-500 text-sm tracking-[0.3em] uppercase mb-4">
               Polerinna Studio
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold leading-tight mb-8 text-neutral-900">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold leading-tight mb-8 text-neutral-700">
               {t('title')}
             </h2>
             <p className="text-neutral-600 leading-relaxed text-lg mb-12">
@@ -56,7 +56,7 @@ export default function About() {
                 <div key={v.title} className="flex gap-4">
                   <span className="text-2xl flex-shrink-0">{v.icon}</span>
                   <div>
-                    <h3 className="font-semibold text-neutral-900 mb-1">{v.title}</h3>
+                    <h3 className="font-semibold text-neutral-700 mb-1">{v.title}</h3>
                     <p className="text-neutral-500 text-sm leading-relaxed">{v.desc}</p>
                   </div>
                 </div>

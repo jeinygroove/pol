@@ -22,7 +22,7 @@ export default async function GalleryPage() {
         <p className="text-gold-500 text-sm tracking-[0.3em] uppercase mb-4">
           Polerinna Studio
         </p>
-        <h1 className="font-serif text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+        <h1 className="font-serif text-4xl md:text-5xl font-bold text-neutral-700 mb-4">
           {t('title')}
         </h1>
       </div>

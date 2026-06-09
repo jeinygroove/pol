@@ -78,7 +78,7 @@ export default function Studios() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-gold-500 text-sm tracking-[0.3em] uppercase mb-4">München</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-neutral-700 mb-4">
             {t('title')}
           </h2>
           <p className="text-neutral-500 text-lg">2 Standorte in München</p>

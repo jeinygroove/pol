@@ -27,7 +27,7 @@ export default function Hero() {
         <p className="text-gold-600 text-sm tracking-[0.4em] uppercase mb-4">
           Polerinna Studios
         </p>
-        <h1 className="font-serif text-5xl md:text-7xl font-bold leading-tight mb-6 text-neutral-900">
+        <h1 className="font-serif text-5xl md:text-7xl font-bold leading-tight mb-6 text-neutral-700">
           {t('tagline')}
         </h1>
         <p className="text-xl md:text-2xl text-neutral-600 mb-10 font-light">
