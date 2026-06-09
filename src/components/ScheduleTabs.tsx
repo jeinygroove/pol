@@ -11,8 +11,8 @@ const TABS: { key: TabKey; label: string }[] = [
 ];
 
 const WIDGETS: Record<string, string> = {
-  schedule_polerinna: 'db2f1a6b-b8c8-4f98-80db-a6d372dcefe4',
-  schedule_gold:      '393d4319-4c43-4f66-aee7-a1aa7d163f75',
+  schedule_polerinna: '770b7d45-9aab-43e6-894c-d4f0bbb7977e',
+  schedule_gold:      '4873a28e-0327-49b7-ac3e-6f612463bd46',
   prices:             'cb8dcbb8-8d56-4667-a1e9-902ba0e14cc0',
   vouchers:           '742c805d-b09a-47bd-b570-3675138ed89a',
 };
@@ -66,7 +66,7 @@ export default function ScheduleTabs() {
             onClick={() => setActiveStudio('polerinna')}
             className={`flex flex-col items-start px-5 py-3 border-2 transition-all text-left ${
               activeStudio === 'polerinna'
-                ? 'border-neutral-900 bg-neutral-900'
+                ? 'border-gold-700 bg-gold-700'
                 : 'border-neutral-200 bg-white hover:border-neutral-400'
             }`}
           >
@@ -74,7 +74,7 @@ export default function ScheduleTabs() {
               activeStudio === 'polerinna' ? 'text-white' : 'text-neutral-900'
             }`}>Polerinna</span>
             <span className={`text-xs mt-0.5 ${
-              activeStudio === 'polerinna' ? 'text-neutral-400' : 'text-neutral-500'
+              activeStudio === 'polerinna' ? 'text-gold-100' : 'text-neutral-500'
             }`}>Lindwurmstraße 101</span>
           </button>
           <button

@@ -27,13 +27,21 @@ export default function Navigation() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-sm">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center">
+        <Link href={`/${locale}`} className="flex items-center gap-8">
           <Image
             src="/images/logo-polerinna.png"
             alt="Polerinna Poledance Studio"
             width={160}
             height={64}
             className="h-16 w-auto object-contain brightness-0"
+            priority
+          />
+          <Image
+            src="/images/logo-polerinna-gold.png"
+            alt="Polerinna Gold Poledance Studio"
+            width={150}
+            height={64}
+            className="h-16 w-auto object-contain"
             priority
           />
         </Link>
